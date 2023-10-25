@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    HI
+   {% for num in var %}
+        {% if num % 2 == 1 %}
+        current num is {{num}}
+        {% endif %}
+   {% endfor %}
+   <form method="POST" action="/">
+        <input type="text" name="num" />
+        <button type="submit">Submit</button>
+   </form>
+   <img src="static/blueprint.png">
+   {%if form%}
+   {% if form % 2 == 1 %}
+    Your number was odd!
+    {%endif%}
+    {% if form % 2 == 0 %}
+    Your number was even!
+    {%endif%}
+    {%endif%}
+
+</body>
+</html>
